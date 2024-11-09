@@ -1,10 +1,10 @@
 # Cross Account Resource Sharing in AWS
 ## account details:
--   **Account-A:** this account is the source account which want to access some resources in other account.`accoutn B`
--   **Account-B:** or Desitnation account which has some resource that Account-A wants to access.
+-   **Account-A:** this account is the source account which want to access some resources in other account `account B`.
+-   **Account-B:** or Destination account which has some resources that Account-A wants to access.
 ## Account-B configuration:
 1. login to console with IAM user in account-B
-2. go to IAM and create new role:
+2. go to IAM dashboard and create new role:
    1. choose `AWS ACCOUNT` from Trusted entity type.
    2. down the page select `Another AWS Account` and enter the account ID of account-A and click next.
    3. choose the proper permission that account-A will be used to access resources in Account-B. in my example I choosed `AdministratorAccess`. Then click next.
